@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - CyberPunk Info board</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Jura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/leaderboard.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="baseContainer">
+      <!--main boundary-->
+      <div class="base" data-depth="0.00">
+        <!--Top right heading inside base div-->
+        <div class="topRightHeading" data-depth="1.00">SCORE RECORD</div>
+
+        <!--list-->
+        <ul data-depth="1.00">
+          <li><%=data1.username.split("@")[0]%> \ <%=data1.score%>P</li>
+          <li><%=data2.username.split("@")[0]%> \ <%=data2.score%>P</li>
+          <li><%=data3.username.split("@")[0]%> \ <%=data3.score%>P</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/cardd.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/home_start_btn.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+      * {
+        font-family: "Share Tech Mono", monospace;
+      }
+    </style>
+  <link rel="icon" href="/img/favicon-32x32.png">
+
+  </head>
+
+  <body>
+    <h1 style="color:white;">Points : <%=score%></h1>
+    <a href="/leaderboard"><button>LEADERBOARD</button></a>    <!-- new time line starts here -->
+    <section id="timeline">
+      <div class="tl-item">
+        <div class="tl-bg"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">Subway</p>
+        </div>
+
+        <div class="tl-content">
+          <!-- <h1>Not Completed</h1> -->
+          <!-- code for node -->
+
+          <% if(subway8==="Reached" ){ %>
+          <h3 style="color: green">SUBWAY COMPLETED</h3>
+          <% } else{ %>
+          <h3 style="color: red">SUBWAY UNCOMPLETED</h3>
+          <% } %>
+
+          <!-- <p>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p> -->
+          <p>
+            Discover the untold stories of those who live below us where the
+            light can't reach
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-bg"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">Little_China</p>
+        </div>
+
+        <div class="tl-content">
+          <!-- <h1 class="f3 text--accent ttu">Not Completed</h1> -->
+          <% if(wallmaria2_13==="Reached" ){ %>
+          <h3 style="color: green">LITTLE_CHINA COMPLETED</h3>
+          <% } else{ %>
+          <h3 style="color: red">LITTLE CHINA UNCOMPLETED</h3>
+          <% } %>
+
+          <p>The path that holds the most secrets.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-bg"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">UAC</p>
+        </div>
+
+        <div class="tl-content">
+          <!-- <h1 class="f3 text--accent ttu">Not Completed</h1> -->
+
+          <% if(wallshina3_24==="Reached" ){ %>
+          <h3 style="color: green">UAC COMPLETED</h3>
+          <% } else{ %>
+          <h3 style="color: red">UAC UNCOMPLETED</h3>
+          <% } %>
+
+          <p>The path that only strongest take</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- new time line ends here -->
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="magic">
+      <a href="/subway/1">
+        <div class="card">
+          <h3>Subway</h3>
+        </div>
+      </a>
+      <a href="/little-china/2_1">
+        <div class="card1">Little_China</div>
+      </a>
+      <a href="/uac/3_1">
+        <div class="card2">UAC</div>
+      </a>
+    </div>
+
+    <!-- <a href="https://mythrillfiction.com/" target="_blank">Mythrill</a>
+        <script src="" async defer></script> -->
+  </body>
+</html>

@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+body {
+  overflow:hidden !important;
+    margin: 0px !important;
+    color: white;
+    font-family: Oswald;
+}
+@keyframes glitchold{
+  0%{
+      text-shadow: 
+      0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+  14%{
+      text-shadow: 
+      0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+  15%{
+      text-shadow: 
+      -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+  49%{
+      text-shadow: 
+      -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+  50%{
+      text-shadow: 
+      0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+  99%{
+      text-shadow: 
+      0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75),
+      0 -0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+  100%{
+      text-shadow: 
+      -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); 
+  }
+}
+.glitchold{
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+
+  text-shadow: 
+      0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitchold 500ms infinite;
+}
+
+.glitchold span{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitchold span:first-child{
+  animation: glitchold 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-.05em, -0.0125em);
+  opacity: 0.8;
+}
+.glitchold span:last-child{
+  animation: glitchold 375ms infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+.div1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://wallpaper.dog/large/5502365.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: flex-start;
+
+}
+
+/* NAVBAR */
+
+.header {
+  width: 80%;
+    height: 7vh;
+    background-color: hsla(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 10%;
+    z-index: 10;
+    position: fixed;
+
+}
+
+.logo {
+    /* margin: 5em 5em 3em 5em; */
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo-img {
+    height: 3em;
+    width: 3em;
+    background-image: url("https://www.backslashtiet.in/img/2.png") no-repeat;
+    background-size: contain;
+}
+
+.bcs {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-links {
+    list-style: none;
+
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.labirynth {
+    /* align-self: center; */
+    margin: 0 auto 6em auto;
+    font-size: 7em;
+    font-weight: 800;
+}
+
+/* ------------------------------------------------------------- */
+
+.div2 {
+    height: 100vh;
+    width: 100%;
+    color: black;
+}
+
+/* ABOUT SECTION */
+
+.heading {
+    font-size: 3.5em;
+    margin: 1em 2em 1em 2em;
+    font-weight: 900;
+    color: red;
+    /* font-size: 2em; */
+    /* margin: 0 0 0 1em
+    /* color: #fff; */
+  text-shadow:
+      0 0 7px red,
+      0 0 10px red,
+      0 0 21px red,
+      0 0 42px white,
+      0 0 82px white,
+      0 0 92px white,
+      0 0 102px white,
+      0 0 151px white;
+      animation: flicker1 1.5s infinite alternate
+
+}
+
+.text {
+    font-size: 2em;
+    margin: 1em 3em 1em 3em;
+}
+
+.about-container {
+    margin: 3em 2em 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* CARDS */
+
+.card {
+    color: white;
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 5%;
+
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+.card:hover {
+    transition: all 0.2s ease-in;
+    transform: scale(1.05);
+}
+
+box-icon {
+    width: 2em;
+    height: 2em;
+    margin: 2em 0 0 2em;
+}
+
+.card h3 {
+    font-size: 2em;
+    margin: 0 0 0 1em;
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px red,
+      0 0 82px red,
+      0 0 92px red,
+      0 0 102px red,
+      0 0 151px red;
+      animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px white,
+        0 0 11px white,
+        0 0 19px white,
+        0 0 40px red,
+        0 0 80px red,
+        0 0 90px red,
+        0 0 100px red,
+        0 0 150px red;
+    
+    }
+    
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+ 
+
+.card .card-text {
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+
+
+/* SPONSORS SECTION */
+
+
+.div3 {
+    height: 100vh;
+    width: 100%;
+    background-color: mediumseagreen;
+    position: absolute;
+    background-image: url("https://wallpaper.dog/large/5502365.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.div3 h3 {
+    margin: 2em 0 2em 2em;
+    font-size: 3em;
+}
+
+
+.box {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel__face {
+
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    /* box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5); */
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+}
+
+.carousel__face {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel__face:nth-child(1) {
+    background-image: url("https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url("https://i.pcmag.com/imagery/reviews/04BeuaBbm49onPbM1tX7ENj-6..v1569482810.png");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url("https://global-uploads.webflow.com/6142c85ce5c84509dc947253/6165ef3cf35c9532c3c57e09_Interview%20Cake.jpeg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url("https://play-lh.googleusercontent.com/ERb2pAsmAbvaYsaWadAk5y51GPyWw8Rvsw6L1cEHeT2H7H54FZGVjDDetECMLrdSp8DS");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+    background-image: url("https://hoverrobotix.com/wp-content/uploads/2019/11/logo.png");
+    background-color: white;
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+    background-image: url("https://www.devincept.com/assets/img/GMC_logo.png");
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+    background-image: url("https://logowik.com/content/uploads/images/xyz-domain6839.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+    background-image: url("https://thementorx.com/wp-content/uploads/2020/02/cropped-MENTORx-logo-black-with-white-tag-line-Round-small-2.png");
+    transform: rotateY(280deg) translateZ(430px);
+    background-color: white;
+    background-size: contain;
+}
+
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}

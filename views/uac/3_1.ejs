@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/quest.css" />
+    <title>Question 3_1</title>
+    <link rel="icon" href="/img/favicon-32x32.png" />
+    <script>
+      let hintNum = 0;
+      const hints = [
+        "This is hint 1",
+        "This is hint 2",
+        "This is hint 3",
+        "This is hint 4",
+        "This is hint 5",
+        "No more hints available",
+      ];
+
+      const showHint = () => {
+        if (hintNum > 4) hintNum = 5;
+        alert(hints[hintNum++]);
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>BACKSLASH</h1>
+      </div>
+      <div class="progress-bar"></div>
+      <div class="question">
+        <h2>QUESTION 3_1</h2>
+
+        <p class="cyberpunk">
+          In a family, there are six members A, B, C, D, E and F. A and B are a
+          married couple, A being the male member. D is the only son of C, who
+          is the brother of A. E is the sister of D. B is the daughter-in-law of
+          F, whose husband has died. How is E related to C ?
+        </p>
+        <form action="/uac/3_1" method="POST">
+          <div class="textarea">
+            <input
+              type="text"
+              class="textarea"
+              name="answer"
+              id="answer"
+              placeholder="Enter your Answer here"
+            />
+          </div>
+          <button class="cyberpunk2077" type="button" onclick="showHint()">
+            Use a hint
+          </button>
+          <button class="cyberpunk2077" type="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="log-out">
+        <div class="team-name">
+          <h3><%= team %></h3>
+          <a href="/logout"> <button class="cyberpunk2077">LOG OUT</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

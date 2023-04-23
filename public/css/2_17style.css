@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Tapestry&family=Water+Brush&display=swap");
+
+body {
+  margin: 0px !important;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-size: contain;
+}
+.container {
+  background-image: url("images/finbcs.jpg");
+  width: 40vw;
+  height: 20vw;
+  border-radius: 4em 4em 4em 4em;
+
+  opacity: 0.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kunal {
+  background-image: url("https://i.pinimg.com/564x/b0/82/fa/b082fae22306f725396f6395b47bbe6b.jpg");
+  /* background-color: white;  */
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  border-radius: 5em 5em 5em 5em;
+  width: 30vw;
+  height: 55vw;
+  background-position: center;
+}
+
+.pt {
+  color: white;
+  text-shadow: 2px 2px red;
+  margin: 2em 5em 1em 5em;
+  font-size: 1.8em;
+  font-family: "Roboto Condensed";
+}
+
+#pt8 {
+  visibility: hidden;
+}
+
+.heading {
+  justify-content: center;
+
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  /* height:3em; */
+  font-size: 4em;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
+      0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+.kunass {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.chirayu {
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.6; */
+}

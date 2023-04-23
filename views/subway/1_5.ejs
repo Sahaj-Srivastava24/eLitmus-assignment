@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/quest.css" />
+    <title>Question 1_5</title>
+    <link rel="icon" href="/img/favicon-32x32.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>BACKSLASH</h1>
+      </div>
+      <div class="progress-bar"></div>
+      <div class="question">
+        <h2>QUESTION 1_5</h2>
+
+        <p class="cyberpunk">
+          Q. No important choices. Nothing you do here changes the outcome of
+          this mission ………… or of future mission.
+
+          <img class="quest_img" src="/img/rail_cypher.png" alt="" />
+        </p>
+        <form action="/subway/1_5" method="POST">
+          <div class="textarea">
+            <input
+              type="text"
+              class="textarea"
+              name="answer"
+              id="answer"
+              placeholder="Enter your Answer here"
+            />
+          </div>
+          <button class="cyberpunk2077" type="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="log-out">
+        <div class="team-name">
+          <h3><%= team %></h3>
+          <a href="/logout"> <button class="cyberpunk2077">LOG OUT</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

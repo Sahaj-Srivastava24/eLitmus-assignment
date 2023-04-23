@@ -1,0 +1,56 @@
+const mongoose = require("mongoose");
+const passportLocalMongoose = require("passport-local-mongoose");
+
+const userSchema = new mongoose.Schema({
+  email: String,
+  password: String,
+  team: String,
+  score:{type:Number,default:0},
+  pathone: { type: Boolean, default: false },
+  pathtwo: { type: Boolean, default: false },
+  paththree: { type: Boolean, default: false },
+  pathfour: { type: Boolean, default: false },
+  pathfive: { type: Boolean, default: false },
+  pathsix: { type: Boolean, default: false },
+  pathseven: { type: Boolean, default: false },
+  patheight: { type: Boolean, default: false },
+  pathnine: { type: Boolean, default: false },
+  subway1: { type: Boolean, default: false },
+  subway2: { type: Boolean, default: false },
+  subway3: { type: Boolean, default: false },
+  subway4: { type: Boolean, default: false },
+  subway5: { type: Boolean, default: false },
+  subway6: { type: Boolean, default: false },
+  subway7: { type: Boolean, default: false },
+  subway8: { type: Boolean, default: false },
+  wallmaria2_1: { type: Boolean, default: false },
+  wallmaria2_9: { type: Boolean, default: false },
+  wallmaria2_10: { type: Boolean, default: false },
+  wallmaria2_11: { type: Boolean, default: false },
+  wallmaria2_12: { type: Boolean, default: false },
+  wallmaria2_13: { type: Boolean, default: false },
+  wallmaria2_14: { type: Boolean, default: false },
+  wallmaria2_15: { type: Boolean, default: false },
+  wallmaria2_16: { type: Boolean, default: false },
+  wallmaria2_17: { type: Boolean, default: false },
+  wallmaria2_18: { type: Boolean, default: false },
+  wallshina3_1: { type: Boolean, default: false },
+  wallshina3_19: { type: Boolean, default: false },
+  wallshina3_20: { type: Boolean, default: false },
+  wallshina3_21: { type: Boolean, default: false },
+  wallshina3_22: { type: Boolean, default: false },
+  wallshina3_23: { type: Boolean, default: false },
+  wallshina3_24: { type: Boolean, default: false },
+  wallshina3_25: { type: Boolean, default: false },
+  wallshina3_26: { type: Boolean, default: false },
+  wallshina3_27: { type: Boolean, default: false },
+  wallshina3_28: { type: Boolean, default: false },
+  wallshina3_29: { type: Boolean, default: false },
+  wallshina3_30: { type: Boolean, default: false },
+  wallshina3_31: { type: Boolean, default: false },
+});
+
+userSchema.plugin(passportLocalMongoose);
+
+const User = new mongoose.model("User", userSchema);
+module.exports = User;

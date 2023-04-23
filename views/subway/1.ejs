@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121213" />
+
+    <!-- HTML Meta Tags -->
+    <title>Wordle clone | DoubleDebug</title>
+    <meta name="description" content="Wordle clone by DoubleDebug" />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://doubledebug.github.io/wordle-speedrun/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wordle clone by DoubleDebug" />
+    <meta
+      property="og:description"
+      content="Wordle game speedrun in HTML, CSS and JavaScript"
+    />
+    <meta
+      property="og:image"
+      content="https://doubledebug.github.io/wordle-speedrun/assets/og-image.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="doubledebug.github.io" />
+    <meta
+      property="twitter:url"
+      content="https://doubledebug.github.io/wordle-speedrun/"
+    />
+    <meta name="twitter:title" content="Wordle clone | DoubleDebug" />
+    <meta
+      name="twitter:description"
+      content="Wordle game speedrun in HTML, CSS and JavaScript"
+    />
+    <meta
+      name="twitter:image"
+      content="https://doubledebug.github.io/wordle-speedrun/assets/og-image.png"
+    />
+
+    <link rel="stylesheet" href="/css/style3.css" />
+    <link rel="stylesheet" href="/css/quest.css" />
+    <style>
+      .btn-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    </style>
+    <script>
+      let hintNum = 0;
+      const hints = [
+        "This is hint 1",
+        "This is hint 2",
+        "This is hint 3",
+        "This is hint 4",
+        "This is hint 5",
+        "No more hints available",
+      ];
+
+      const showHint = () => {
+        if (hintNum > 4) hintNum = 5;
+        alert(hints[hintNum++]);
+      };
+    </script>
+    <!-- <link rel="stylesheet" href="./src/style.css" /> -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/wordle-speedrun/assets/favicon.png"
+    />
+  </head>
+  <body>
+    <h1 class="title">Wordle <span class="title-word-clone">clone</span></h1>
+    <div id="game"></div>
+    <div class="btn-wrapper">
+      <button class="cyberpunk2077" type="button" onclick="showHint()">
+        Use a hint
+      </button>
+    </div>
+    <script defer src="/js/index.js" type="module"></script>
+  </body>
+</html>

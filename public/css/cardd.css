@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+* {
+  font-family: "Share Tech Mono", monospace;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 50vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  /* min-height: 100vh; */
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  /* position: relative; */
+}
+
+.card {
+  /* background: #191c29; */
+  background-image: url("../img/sub.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px !important;
+  flex: 33.3%;
+  margin: 20px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  /* font-family: cursive; */
+}
+
+.card:hover {
+  color: rgb(255, 255, 255);
+  transition: color 1s;
+  font-size: 2rem;
+  /* font-family: "Times New Roman", Times, serif; */
+  /* backdrop-filter: blur(2px); */
+  opacity: 0.95;
+  background-blend-mode: darken;
+  backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%);
+  background-color: rgb(121, 121, 121);
+  transition-duration: .2s ease-out;
+  /* background-blend-mode: color-bu; */
+}
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #f933e8,
+    #fe1cd8 43%,
+    #44a6ff
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin1 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #f933e9,
+    #fe1cd8 43%,
+    #44a6ff
+  );
+  opacity: 1;
+  /* transition: opacity 0.5s;
+  animation: spin1 2.5s linear infinite; */
+}
+.card1 {
+  /* background: #191c29; */
+  background-image: url("../img/little_c.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px !important;
+  flex: 33.3%;
+  margin: 20px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  /* font-family: cursive; */
+}
+
+.card1:hover {
+  color: rgb(88 199 250 / 100%);
+  /* transition: color 1s; */
+  color: rgb(255, 255, 255);
+  transition: color 1s;
+  font-size: 2rem;
+  /* font-family: "Times New Roman", Times, serif; */
+  /* backdrop-filter: blur(2px); */
+  opacity: 0.95;
+  background-blend-mode: darken;
+  backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%);
+  background-color: rgba(121, 121, 121, 0.541);
+  transition-duration: .2s ease-out;
+}
+.card1:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card1::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #ed68b8,
+    #fdd739 43%,
+    #ee3ab2
+  );
+  position: absolute;
+
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin1 2.5s linear infinite;
+}
+
+.card1::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  /* background-image: linear-gradient(
+    var(--rotate),
+    #ed68b8,
+    #fdd739 43%,
+    #ee3ab2
+  ); */
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin1 2.5s linear infinite;
+}
+.card2 {
+  /* background: #191c29; */
+  background-image: url("../img/uac.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px !important;
+  flex: 33.3%;
+  margin: 20px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  /* font-family: cursive; */
+}
+
+.card2:hover {
+  /* color: rgb(88 199 250 / 100%); */
+  /* transition: color 1s; */
+  color: rgb(255, 255, 255);
+  transition: color 1s;
+  font-size: 2rem;
+  /* font-family: "Times New Roman", Times, serif; */
+  /* backdrop-filter: blur(2px); */
+  opacity: 0.95;
+  background-blend-mode: darken;
+  backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%);
+  background-color: rgb(121, 121, 121);
+  transition-duration: .2s ease-out;
+}
+.card2:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card2::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #6e5a3a,
+    #4fe500 43%,
+    #1ead12
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin3 2.5s linear infinite;
+}
+
+.card2::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  /* background-image: linear-gradient(
+    var(--rotate),
+    #6e5a3a,
+    #4fe500 43%,
+    #1ead12
+  ); */
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin2 2.5s linear infinite;
+}
+
+@keyframes spin1 {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+@keyframes spin2 {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+@keyframes spin3 {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+a {
+  color: #212534;
+  text-decoration: none;
+  /* font-family: sans-serif; */
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.magic {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .magic {
+    display: grid !important;
+  }
+}
