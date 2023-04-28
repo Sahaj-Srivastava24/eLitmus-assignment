@@ -89,7 +89,8 @@ app.use("/little-china", littlechina);
 app.use("/uac", uac);
 
 mongoose.connect(
-  "mongodb://localhost:27017",
+  // "mongodb://localhost:27017",
+  "mongodb+srv://jainaviral1908:jZUYiqs9YaD4WcpD@cluster0.zalx9xr.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
